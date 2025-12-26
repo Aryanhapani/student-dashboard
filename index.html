@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+     <link rel="stylesheet" href="style.css" />
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
     rel="stylesheet"
 />
-    <link rel="stylesheet" href="style.css" />
+   
   </head>
   <body>
     <div id="main">
@@ -26,17 +27,17 @@
           </div>
         </div>
         <div id="links">
-            <ul>
-                <li class="active" onclick="loadpage('My task',this)" ><i class="ri-list-check-3"></i><a href="javascript:void(0)" >My Task</a></li>
-                <li onclick="loadpage('Tutorial',this)"><i class="ri-book-fill"></i><a href="javascript:void(0)">Tutorial</a></li>
-                <li onclick="loadpage('Notification',this)"><i class="ri-notification-4-line"></i><a href="javascript:void(0)">Notification</a></li>
-                <li onclick="loadpage('My task',this)"><i class="ri-shield-line"></i><a href="javascript:void(0)">Website Blocker</a></li>
+            <ul class="nav">
+                <li class="nav-items active" data-view="tasks"><i class="ri-list-check-3"></i>My Tasks</li>
+                <li class="nav-items" data-view="Tutorial"><i class="ri-book-fill"></i>Tutorial</li>
+                <li class="nav-items" data-view="progress"><i class="ri-progress-2-line"></i>Progress</li>
+                <li class="nav-items" data-view="Notification"><i class="ri-notification-4-line"></i>Notification</li>
+                <li class="nav-items" data-view="Website Blocker"><i class="ri-shield-line"></i>Website Blocker</li>
             </ul>
         </div>
       </div>
       <div class="ri" id="right">
-        <h2 id="heading">Dashboard</h2>
-        <p id="content">Welcome to your dashboard 🎯</p>
+        
       </div>
     </div>
 

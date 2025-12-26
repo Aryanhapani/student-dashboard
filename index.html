@@ -27,14 +27,21 @@
         </div>
         <div id="links">
             <ul>
-                <li class="active"><i class="ri-list-check-3"></i><a href="#" class="active">My Task</a></li>
-                <li><i class="ri-book-fill"></i><a href="#">Tutorial</a></li>
-                <li><i class="ri-notification-4-line"></i><a href="#">Notification</a></li>
-                <li><i class="ri-shield-line"></i><a href="#">Website Blocker</a></li>
+                <li class="active" onclick="loadpage('My task',this)" ><i class="ri-list-check-3"></i><a href="javascript:void(0)" >My Task</a></li>
+                <li onclick="loadpage('Tutorial',this)"><i class="ri-book-fill"></i><a href="javascript:void(0)">Tutorial</a></li>
+                <li onclick="loadpage('Notification',this)"><i class="ri-notification-4-line"></i><a href="javascript:void(0)">Notification</a></li>
+                <li onclick="loadpage('My task',this)"><i class="ri-shield-line"></i><a href="javascript:void(0)">Website Blocker</a></li>
             </ul>
         </div>
       </div>
-      <div id="right"></div>
+      <div class="ri" id="right">
+        <h2 id="heading">Dashboard</h2>
+        <p id="content">Welcome to your dashboard 🎯</p>
+      </div>
     </div>
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -25,9 +25,9 @@ html,body{
 
 
 #right{
-    height: 100%;
-    width: 75%;
-    background-color: #b84747;
+    flex: 1;
+    padding: 20px;
+    background: #f5f5f5;
 }
 
 #icons{
@@ -80,10 +80,14 @@ html,body{
 
 #links li{
     margin-top: 20px;
-    margin-bottom: 50px;
-    
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    border-radius: 8px;
 }
-
 
 #links li.active{
     color: royalblue;
@@ -91,19 +95,22 @@ html,body{
 
 #links i{
    color: #eae8e8;
-  
-
+   font-size: 18px;
 }
 
 #links a{
     text-decoration: none;
     color: #ffffff;
-    margin-left: 20px;
-    
+    pointer-events: none; /* IMPORTANT */
 }
 
+
 #links li.active{
-    background-color: royalblue;
-    border-radius: 5px;
-    padding: 10px 30px;
+  background: #0d6efd;
+  color: #fff;
 }
+
+#links li.active i{
+  color: #fff;
+}
+
